@@ -7,19 +7,17 @@ public class PlayerController : MonoBehaviour
     /// <summary>
     /// PROBLEMS!
     /// 
-    /// - stuck in walking and jumping anim when touching walls
     /// - Add acceleration
-    /// - bouncing idle anim not showing
     /// - Only half of jump animation is showing
-    /// 
     /// 
     /// </summary>
 
 
+    public static int coinCount = 0;
     public float maxSpeed = 10;
     public float jumpSpeed = 8;
 
-    public bool doubleJump = true;
+    public bool doubleJump;
 
     public Animator animator;
 
@@ -45,6 +43,9 @@ public class PlayerController : MonoBehaviour
         moveHorizontal = Input.GetAxis("Horizontal");
         moveVertical = Input.GetKeyDown("space");
 
+        // flips char sprite when changing direction
+        if ((moveHorizontal > 0 && !facingRight) || (moveHorizontal < 0 && facingRight)) { Flip(); }
+
     }
 
     // FixedUpdate is called at a fixed interval and is independent of frame rate. Put physics code here.
@@ -59,8 +60,7 @@ public class PlayerController : MonoBehaviour
             animator.SetFloat("Speed", Mathf.Abs(moveHorizontal));
         }
 
-        // flips char sprite when changing direction
-        if ((moveHorizontal > 0 && !facingRight) || (moveHorizontal < 0 && facingRight)){ Flip(); }
+        
 
 
         if (moveVertical)
@@ -70,7 +70,8 @@ public class PlayerController : MonoBehaviour
             // Set DJ to true if touching the ground
             if (isGrounded == true)
             {
-                Jumping(isGrounded);
+                Jumping();
+                isGrounded = false;
                 doubleJump = true;               
             }
             // if doesn't have DJ the only SJ is enabled
@@ -78,12 +79,14 @@ public class PlayerController : MonoBehaviour
             {
                 if (doubleJump == true)
                 {
-                    Jumping(doubleJump);
+                    Jumping();
+                    doubleJump = false;
                 }
 
                 if (isWalled == true)
                 {
-                    Jumping(isWalled);
+                    Jumping();
+                    isWalled = false;
                     animator.SetBool("Walled", false);
                 }
 
@@ -95,11 +98,10 @@ public class PlayerController : MonoBehaviour
     }
 
 
-    void Jumping(bool changed)
+    void Jumping()
     {
         rb.velocity = new Vector2(maxSpeed * moveHorizontal, 0);
-        rb.velocity = new Vector2(maxSpeed * moveHorizontal, jumpSpeed);
-        changed = false;
+        rb.velocity = new Vector2(maxSpeed * moveHorizontal, jumpSpeed); 
     }
 
 
@@ -124,8 +126,21 @@ public class PlayerController : MonoBehaviour
         if (theCollision.gameObject.name == "Wall")
         {
             isWalled = true;
-            animator.SetBool("Grounded", isWalled);
+            animator.SetBool("Walled", isWalled);
         }
+
+        
+    }
+
+    //coins are triggers to prevent them affecting movement
+    void OnTriggerEnter2D(Collider2D theCollision)
+    {
+        if (theCollision.gameObject.name == "Coin")
+        {
+            theCollision.gameObject.SetActive(false);
+            coinCount++;
+        }
+
     }
 
 
