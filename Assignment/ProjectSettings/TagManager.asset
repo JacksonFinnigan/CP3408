@@ -8,6 +8,7 @@ TagManager:
   - Wall
   - Fire
   - Background
+  - Coin
   layers:
   - Default
   - TransparentFX
