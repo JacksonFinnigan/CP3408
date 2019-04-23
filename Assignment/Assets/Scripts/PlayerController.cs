@@ -1,15 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
     /// <summary>
     /// PROBLEMS!
     /// 
-    /// - Add acceleration
     /// - Only half of jump animation is showing
-    /// 
+    /// - don't use arrows while on wall?
+    /// - animations wrong
     /// </summary>
 
 
@@ -86,11 +88,21 @@ public class PlayerController : MonoBehaviour
         groundWallChecks = new GroundWallChecks(transform.gameObject); //check to see if touching ground or wall
     }
 
+
+    public float maxSpeed = 10;
+
     void Update()
     {
+        
         moveHorizontal = Input.GetAxis("Horizontal");
         moveVertical = Input.GetKeyDown("space");
 
+        // press shift to run
+        if (Input.GetKey(KeyCode.LeftShift))
+            maxSpeed = 15f;
+        else
+            maxSpeed = 10f;
+            
         //changing animation if on the ground 
         if (groundWallChecks.IsGround())
         {
@@ -104,7 +116,7 @@ public class PlayerController : MonoBehaviour
 
 
 
-    public float maxSpeed = 10;
+    
 
     // FixedUpdate is called at a fixed interval and is independent of frame rate. Put physics code here.
     void FixedUpdate()
@@ -160,6 +172,7 @@ public class PlayerController : MonoBehaviour
 
 
     public static int coinCount = 0;
+    public Text countText;
 
     //coins are triggers to prevent them affecting movement
     void OnTriggerEnter2D(Collider2D theCollision)
@@ -168,6 +181,12 @@ public class PlayerController : MonoBehaviour
         {
             theCollision.gameObject.SetActive(false);
             coinCount++;
+            countText.text = coinCount.ToString() + "/1";
+        }
+
+        if (theCollision.gameObject.name == "DeathBox")
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
 
     }

@@ -2,7 +2,9 @@ Win64
 PlayerPath?
 C:/Users/Froda/Desktop/Unity/Assignment/Builds/Assignment.exe
 SceneListBegin?
+Assets/Scenes/Select Level.unity
 Assets/Scenes/Level001.unity
+Assets/Scenes/Level002.unity
 SceneListEnd?
 984dcc0ba3707b7691fbdca8ff508d28 Unity.TextMeshPro.dll:TMPro.TMP_SelectionCaret
 01aa15e337e3a9c62f15153dfac6d589 Unity.TextMeshPro.dll:TMPro.TMP_Dropdown
@@ -152,9 +154,10 @@ fb6a1ea36b4f6ef5948d283d93760765 UnityEngine.GoogleAudioSpatializer.dll:UnityEng
 a4f0a4f62100f1a4fb5cbe0e00dde83f Unity.TextMeshPro.dll:TMPro.TextMeshProUGUI
 5fc094978ce3e3591a7500ed380d854a Unity.Analytics.DataPrivacy.dll:UnityEngine.Analytics.DataPrivacyButton
 d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
-6ba4d43c9e43b57cbcf937bb0862c567 Assembly-CSharp.dll:.PlayerController
+b40ef2d95c167a47037bf12c5657a634 Assembly-CSharp.dll:.PlayerController
 d791aa6007fa3640be1164ea75bb087d Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
 7c4d61ba679beaa5d71821c8c9d31078 Assembly-CSharp.dll:.CameraFollow
 c6666661329916e218bee7f5e79e60f5 Unity.TextMeshPro.dll:TMPro.TextMeshPro
 3165968ba45c74472d279ba04455fccb Unity.TextMeshPro.dll:TMPro.TMP_ColorGradient
 8649814970b42d345b89944b862453cc Unity.TextMeshPro.dll:TMPro.TMP_SubMesh
+f450bd92c660880e07a6cb4e4f93cd6d Assembly-CSharp.dll:.LevelControl
