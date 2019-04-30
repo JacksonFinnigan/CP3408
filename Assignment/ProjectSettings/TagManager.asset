@@ -9,6 +9,9 @@ TagManager:
   - Fire
   - Background
   - Coin
+  - Hazard
+  - Portal
+  - Goal
   layers:
   - Default
   - TransparentFX
@@ -45,6 +48,9 @@ TagManager:
   m_SortingLayers:
   - name: Background
     uniqueID: 305414973
+    locked: 0
+  - name: Hazard
+    uniqueID: 3457496203
     locked: 0
   - name: Default
     uniqueID: 0

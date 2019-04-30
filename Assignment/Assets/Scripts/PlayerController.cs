@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     /// - Only half of jump animation is showing
     /// - don't use arrows while on wall?
     /// - animations wrong
+    /// - 
     /// </summary>
 
 
@@ -90,12 +91,22 @@ public class PlayerController : MonoBehaviour
 
 
     public float maxSpeed = 10;
+    int test;
+
 
     void Update()
     {
         
         moveHorizontal = Input.GetAxis("Horizontal");
         moveVertical = Input.GetKeyDown("space");
+
+        
+        // Only allowing player to move away from wall- NEEDS WORK
+        int test = groundWallChecks.WallDirection();
+        if (test == -1 && moveHorizontal < 0)
+            moveHorizontal = 0;
+        else if(test == 1 && moveHorizontal > 0)
+            moveHorizontal = 0;
 
         // press shift to run
         if (Input.GetKey(KeyCode.LeftShift))
@@ -149,7 +160,7 @@ public class PlayerController : MonoBehaviour
                 animator.SetBool("Walled", false);
             }
 
-            moveVertical = false;
+            //moveVertical = false;
         }
 
     }
@@ -177,17 +188,18 @@ public class PlayerController : MonoBehaviour
     //coins are triggers to prevent them affecting movement
     void OnTriggerEnter2D(Collider2D theCollision)
     {
-        if (theCollision.gameObject.name == "Coin")
+        if (theCollision.gameObject.CompareTag("Coin"))
         {
             theCollision.gameObject.SetActive(false);
             coinCount++;
             countText.text = coinCount.ToString() + "/1";
         }
 
-        if (theCollision.gameObject.name == "DeathBox")
-        {
+        if (theCollision.gameObject.CompareTag("Hazard"))
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        }
+        if (theCollision.gameObject.CompareTag("Goal"))
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        
 
     }
 

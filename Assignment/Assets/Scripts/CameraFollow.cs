@@ -6,11 +6,12 @@ public class CameraFollow : MonoBehaviour
 {
 
 
-    public Transform target; //use trandform when getting into on position, transform or scale
-
-    public float smoothSpeed = 10f; //higher value, faster camewra will lock on
+    public Transform target; //use transform when getting into on position, transform or scale
+   
+    public float smoothSpeed = 10f; //higher value, faster camera will lock on
 
     public Vector3 offset;
+
 
     //late update runs after update so that char movement doesn't affect camera position before char moves
     void LateUpdate()
@@ -21,5 +22,7 @@ public class CameraFollow : MonoBehaviour
         transform.position = smoothedPosition;
         //transform.LookAt(target);//changes camera view, could be goot for a harder experience?
     }
+
+    
 
 }
