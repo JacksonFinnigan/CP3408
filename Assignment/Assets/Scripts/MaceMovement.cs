@@ -46,14 +46,11 @@ public class MaceMovement : MonoBehaviour
     void Start()
     {
         startPoint = transform.position;
-        //Debug.Log(startPoint);
+
         groundWallChecks = new GroundWallChecks(transform.gameObject); //check to see if touching ground or wall
 
         cameraMainComponent = GameObject.Find("MainCamera");
         camShake = cameraMainComponent.GetComponent<CameraShake>();
-
-        if(camShake == null)
-            Debug.Log("No shake???");
     }
 
     // Update is called once per frame
@@ -96,7 +93,7 @@ public class MaceMovement : MonoBehaviour
     bool checkPosition()
     {
         currentPoint = transform.position;
-        return currentPoint == startPoint;
+        return currentPoint.y >= startPoint.y;
     }
 
 

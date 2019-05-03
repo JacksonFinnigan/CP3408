@@ -10,9 +10,11 @@ public class PlayerController : MonoBehaviour
     /// PROBLEMS!
     /// 
     /// - Only half of jump animation is showing
-    /// - don't use arrows while on wall?
     /// - animations wrong
-    /// - 
+    /// - sprites for things
+    /// - death screen (ish) for restart
+    /// - lock all key inputs on level restart
+    /// - do we want variable jumping?
     /// </summary>
 
 
@@ -77,10 +79,13 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D rb;
 
     bool moveVertical = false;
-    float moveHorizontal = 0f;
     bool facingRight = true;
+    float moveHorizontal = 0f;
+
     int jumpCount = 0;
 
+    float time = 0f;
+    bool keyDisabled = false;
 
     // Use this for initialization
     private void Start()
@@ -91,16 +96,17 @@ public class PlayerController : MonoBehaviour
 
 
     public float maxSpeed = 10;
-    int test;
 
 
     void Update()
     {
-        
-        moveHorizontal = Input.GetAxis("Horizontal");
-        moveVertical = Input.GetKeyDown("space");
 
-        
+        if (!keyDisabled)
+        {
+            moveHorizontal = Input.GetAxis("Horizontal");
+            moveVertical = Input.GetKeyDown("space");
+        }
+
         // Only allowing player to move away from wall- NEEDS WORK
         int test = groundWallChecks.WallDirection();
         if (test == -1 && moveHorizontal < 0)
@@ -108,8 +114,8 @@ public class PlayerController : MonoBehaviour
         else if(test == 1 && moveHorizontal > 0)
             moveHorizontal = 0;
 
-        // press shift to run
-        if (Input.GetKey(KeyCode.LeftShift))
+        // press shift to run when on the ground
+        if (Input.GetKey(KeyCode.LeftShift) && groundWallChecks.IsGround())
             maxSpeed = 15f;
         else
             maxSpeed = 10f;
@@ -133,7 +139,15 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
 
-        // if grounded, can automatically double jump, if collision with wall, can't double jump
+        //Timer to prevent spamming wall jump
+        time += Time.deltaTime;
+        if (time > 0.3f && keyDisabled)
+        {
+            keyDisabled = false;
+            time = 0;
+        }
+
+        // move horizontal
         if(moveHorizontal != 0)
         {
             rb.velocity = new Vector2(maxSpeed * moveHorizontal, rb.velocity.y);
@@ -143,24 +157,21 @@ public class PlayerController : MonoBehaviour
         if (moveVertical)
         {
 
-            // checks jump counter and jumps
-            if (jumpCount != 0)
-            {
-                Jump();
-                animator.SetBool("Grounded", false);
-            }
-
             // jumps away from wall and flips char
             if (groundWallChecks.IsWalled())
             {
-                rb.velocity = new Vector2(-groundWallChecks.WallDirection() * maxSpeed * 0.5f, 0);
-                rb.velocity = new Vector2(rb.velocity.x, maxSpeed * 0.8f); //Add force opposite to the wall
                 Flip();
-
+                keyDisabled = true;
                 animator.SetBool("Walled", false);
+                rb.velocity = new Vector2(-groundWallChecks.WallDirection() * maxSpeed * 0.5f, maxSpeed * 0.8f); //Add force opposite to the wall  
             }
 
-            //moveVertical = false;
+            // checks jump counter and jumps
+            if (jumpCount > 0)
+            {
+                Jump();
+            }
+  
         }
 
     }
@@ -168,8 +179,9 @@ public class PlayerController : MonoBehaviour
 
     void Jump()
     {
-        rb.velocity = new Vector2(maxSpeed * moveHorizontal, 0);
-        rb.velocity = new Vector2(maxSpeed * moveHorizontal, maxSpeed * 0.8f);
+        animator.SetBool("Grounded", false);
+        ClearForces();
+        rb.velocity = new Vector2(maxSpeed * moveHorizontal, maxSpeed * 0.8f);      
         jumpCount--;
     }
 
@@ -178,6 +190,12 @@ public class PlayerController : MonoBehaviour
     {
         facingRight = !facingRight;
         transform.Rotate(Vector3.up * 180);
+    }
+
+    private void ClearForces()
+    {
+        rb.velocity = Vector2.zero;
+        rb.angularVelocity = 0;
     }
 
 
@@ -197,6 +215,7 @@ public class PlayerController : MonoBehaviour
 
         if (theCollision.gameObject.CompareTag("Hazard"))
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
         if (theCollision.gameObject.CompareTag("Goal"))
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         
