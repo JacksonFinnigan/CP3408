@@ -1,0 +1,325 @@
+fileFormatVersion: 2
+guid: 7b41025b9c24f4ad6ad24b1b8f6707a6
+timeCreated: 1501909834
+licenseType: Store
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: shadowFiend_arm_L1_1
+    21300002: shadowFiend_arm_L1_2
+    21300004: shadowFiend_arm_L1_3
+    21300006: shadowFiend_arm_L2_1
+    21300008: shadowFiend_arm_L2_2
+    21300010: shadowFiend_arm_L2_3
+    21300012: shadowFiend_arm_R1_1
+    21300014: shadowFiend_arm_R1_2
+    21300016: shadowFiend_arm_R1_3
+    21300018: shadowFiend_arm_R2_1
+    21300020: shadowFiend_arm_R2_2
+    21300022: shadowFiend_arm_R2_3
+    21300024: shadowFiend_body_1
+    21300026: shadowFiend_body_2
+    21300028: shadowFiend_body_3
+    21300030: shadowFiend_cape_L
+    21300032: shadowFiend_cape_R
+    21300034: shadowFiend_head
+    21300036: shadowFiend_shadow
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: 5
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: shadowFiend_arm_L1_1
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 362
+        width: 121
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: shadowFiend_arm_L1_2
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 145
+        width: 124
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: shadowFiend_arm_L1_3
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 50
+        width: 143
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: shadowFiend_arm_L2_1
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 404
+        width: 139
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: shadowFiend_arm_L2_2
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 397
+        width: 139
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: shadowFiend_arm_L2_3
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 394
+        width: 142
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: shadowFiend_arm_R1_1
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 183
+        width: 132
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: shadowFiend_arm_R1_2
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 306
+        width: 124
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: shadowFiend_arm_R1_3
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 50
+        width: 165
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: shadowFiend_arm_R2_1
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 237
+        width: 138
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: shadowFiend_arm_R2_2
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 239
+        width: 140
+        height: 156
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: shadowFiend_arm_R2_3
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 243
+        width: 138
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: shadowFiend_body_1
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 3
+        width: 172
+        height: 234
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: shadowFiend_body_2
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 243
+        width: 172
+        height: 235
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: shadowFiend_body_3
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 3
+        width: 172
+        height: 232
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: shadowFiend_cape_L
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 3
+        width: 126
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: shadowFiend_cape_R
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 209
+        width: 124
+        height: 151
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: shadowFiend_head
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 3
+        width: 232
+        height: 238
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: shadowFiend_shadow
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 3
+        width: 310
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

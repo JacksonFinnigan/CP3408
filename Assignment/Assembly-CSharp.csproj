@@ -62,13 +62,13 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\CameraShake.cs" />
-    <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\LevelControl.cs" />
     <Compile Include="Assets\Scripts\MaceMovement.cs" />
+    <Compile Include="Assets\Scripts\Patrol.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Projectile.cs" />
     <Compile Include="Assets\Scripts\Rotator.cs" />
-    <Compile Include="Assets\Unused Sprites and Animations\5 RGP Characters - Demon Content\Scripts\AnimationManager.cs" />
+    <Compile Include="Assets\Scripts\ShadowEnemy.cs" />
     <Compile Include="Assets\Unused Sprites and Animations\FantasyMonsters\Scripts\MonsterAnimationManager.cs" />
     <Compile Include="Assets\Unused Sprites and Animations\FantasyMonsters\Scripts\MonsterCollection.cs" />
     <Compile Include="Assets\Unused Sprites and Animations\FantasyMonsters\Scripts\MonsterCollectionRefresh.cs" />

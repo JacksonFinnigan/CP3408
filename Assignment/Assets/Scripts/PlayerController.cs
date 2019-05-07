@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
     /// - death screen (ish) for restart
     /// - lock all key inputs on level restart
     /// - do we want variable jumping?
+    /// - fix purple man from where he shoots, also flip him to face player if needed
     /// </summary>
 
 
