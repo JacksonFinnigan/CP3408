@@ -1,0 +1,283 @@
+fileFormatVersion: 2
+guid: f8e9695916a4b4e2f965c8ff899d6c65
+timeCreated: 1501914926
+licenseType: Store
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: dragonOfRevenge_arm_L_1
+    21300002: dragonOfRevenge_arm_L_2
+    21300004: dragonOfRevenge_arm_R_1
+    21300006: dragonOfRevenge_arm_R_2
+    21300008: dragonOfRevenge_belt
+    21300010: dragonOfRevenge_body
+    21300012: dragonOfRevenge_cape_L
+    21300014: dragonOfRevenge_cape_R
+    21300016: dragonOfRevenge_head_1
+    21300018: dragonOfRevenge_head_2
+    21300020: dragonOfRevenge_leg_L_1
+    21300022: dragonOfRevenge_leg_L_2
+    21300024: dragonOfRevenge_leg_R_1
+    21300026: dragonOfRevenge_leg_R_2
+    21300028: dragonOfRevenge_shadow
+    21300030: dragonOfRevenge_skirt
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: 5
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: dragonOfRevenge_arm_L_1
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 260
+        width: 75
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: dragonOfRevenge_arm_L_2
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 117
+        width: 61
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: dragonOfRevenge_arm_R_1
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 260
+        width: 75
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: dragonOfRevenge_arm_R_2
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 260
+        width: 58
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: dragonOfRevenge_belt
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2
+        width: 280
+        height: 343
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: dragonOfRevenge_body
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 2
+        width: 159
+        height: 175
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: dragonOfRevenge_cape_L
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 2
+        width: 65
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: dragonOfRevenge_cape_R
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 347
+        width: 159
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: dragonOfRevenge_head_1
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 194
+        width: 238
+        height: 165
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: dragonOfRevenge_head_2
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 2
+        width: 232
+        height: 209
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: dragonOfRevenge_leg_L_1
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 260
+        width: 80
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: dragonOfRevenge_leg_L_2
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 437
+        width: 51
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: dragonOfRevenge_leg_R_1
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 347
+        width: 80
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: dragonOfRevenge_leg_R_2
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 437
+        width: 51
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: dragonOfRevenge_shadow
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 213
+        width: 310
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: dragonOfRevenge_skirt
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 2
+        width: 270
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

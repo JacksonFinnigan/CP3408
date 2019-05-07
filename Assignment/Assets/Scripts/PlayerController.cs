@@ -181,7 +181,7 @@ public class PlayerController : MonoBehaviour
     {
         animator.SetBool("Grounded", false);
         ClearForces();
-        rb.velocity = new Vector2(maxSpeed * moveHorizontal, maxSpeed * 0.8f);      
+        rb.velocity = new Vector2(maxSpeed * moveHorizontal, 10 * 0.8f);      
         jumpCount--;
     }
 
@@ -202,6 +202,8 @@ public class PlayerController : MonoBehaviour
 
     public static int coinCount = 0;
     public Text countText;
+    //public Color flashColour = new Color(1f, 0f, 0f, 0.1f);
+    //public Image damageImage;
 
     //coins are triggers to prevent them affecting movement
     void OnTriggerEnter2D(Collider2D theCollision)
@@ -214,12 +216,24 @@ public class PlayerController : MonoBehaviour
         }
 
         if (theCollision.gameObject.CompareTag("Hazard"))
+        {
+            //damageImage.color = new Color(1f, 0f, 0f, 0.1f);
+            //FlashScreen();
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
 
         if (theCollision.gameObject.CompareTag("Goal"))
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         
 
+    }
+
+
+    
+
+    void FlashScreen()
+    {
+        //damageImage.color = Color.Lerp(damageImage.color, Color.clear, 0.1f * Time.deltaTime);
     }
 
 

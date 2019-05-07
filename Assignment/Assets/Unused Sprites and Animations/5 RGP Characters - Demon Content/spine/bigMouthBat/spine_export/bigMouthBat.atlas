@@ -1,0 +1,48 @@
+
+bigMouthBat.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bigMouthBat_cape_L
+  rotate: false
+  xy: 330, 2
+  size: 87, 50
+  orig: 87, 50
+  offset: 0, 0
+  index: -1
+bigMouthBat_cape_R
+  rotate: false
+  xy: 419, 2
+  size: 87, 50
+  orig: 87, 50
+  offset: 0, 0
+  index: -1
+bigMouthBat_head_1
+  rotate: false
+  xy: 2, 7
+  size: 162, 158
+  orig: 162, 158
+  offset: 0, 0
+  index: -1
+bigMouthBat_head_2
+  rotate: false
+  xy: 166, 7
+  size: 162, 158
+  orig: 162, 158
+  offset: 0, 0
+  index: -1
+bigMouthBat_head_3
+  rotate: false
+  xy: 330, 54
+  size: 162, 158
+  orig: 162, 158
+  offset: 0, 0
+  index: -1
+bigMouthBat_shadow
+  rotate: false
+  xy: 2, 167
+  size: 310, 45
+  orig: 310, 45
+  offset: 0, 0
+  index: -1

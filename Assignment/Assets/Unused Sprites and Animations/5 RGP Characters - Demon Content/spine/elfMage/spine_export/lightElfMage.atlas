@@ -1,0 +1,83 @@
+
+lightElfMage.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+lightElfMage_arm_L_1
+  rotate: false
+  xy: 362, 2
+  size: 116, 89
+  orig: 116, 89
+  offset: 0, 0
+  index: -1
+lightElfMage_arm_L_2
+  rotate: true
+  xy: 873, 167
+  size: 79, 133
+  orig: 79, 133
+  offset: 0, 0
+  index: -1
+lightElfMage_arm_R_1
+  rotate: false
+  xy: 662, 61
+  size: 116, 89
+  orig: 116, 89
+  offset: 0, 0
+  index: -1
+lightElfMage_arm_R_2
+  rotate: true
+  xy: 734, 154
+  size: 92, 137
+  orig: 92, 137
+  offset: 0, 0
+  index: -1
+lightElfMage_belt
+  rotate: false
+  xy: 539, 81
+  size: 121, 69
+  orig: 121, 69
+  offset: 0, 0
+  index: -1
+lightElfMage_body
+  rotate: false
+  xy: 216, 53
+  size: 144, 146
+  orig: 144, 146
+  offset: 0, 0
+  index: -1
+lightElfMage_cape_1
+  rotate: true
+  xy: 539, 152
+  size: 94, 193
+  orig: 94, 193
+  offset: 0, 0
+  index: -1
+lightElfMage_cape_2
+  rotate: true
+  xy: 362, 93
+  size: 106, 175
+  orig: 106, 175
+  offset: 0, 0
+  index: -1
+lightElfMage_head
+  rotate: false
+  xy: 2, 19
+  size: 212, 227
+  orig: 212, 227
+  offset: 0, 0
+  index: -1
+lightElfMage_shadow
+  rotate: false
+  xy: 216, 201
+  size: 310, 45
+  orig: 310, 45
+  offset: 0, 0
+  index: -1
+lightElfMage_weapon
+  rotate: false
+  xy: 480, 39
+  size: 52, 52
+  orig: 52, 52
+  offset: 0, 0
+  index: -1

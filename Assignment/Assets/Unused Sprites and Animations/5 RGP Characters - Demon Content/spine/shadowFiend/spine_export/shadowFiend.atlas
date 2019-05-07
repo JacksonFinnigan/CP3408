@@ -1,0 +1,139 @@
+
+shadowFiend.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+shadowFiend_arm_L1_1
+  rotate: false
+  xy: 602, 18
+  size: 121, 132
+  orig: 121, 132
+  offset: 0, 0
+  index: -1
+shadowFiend_arm_L1_2
+  rotate: false
+  xy: 896, 235
+  size: 124, 132
+  orig: 124, 132
+  offset: 0, 0
+  index: -1
+shadowFiend_arm_L1_3
+  rotate: false
+  xy: 584, 305
+  size: 143, 157
+  orig: 143, 157
+  offset: 0, 0
+  index: -1
+shadowFiend_arm_L2_1
+  rotate: true
+  xy: 176, 2
+  size: 106, 139
+  orig: 106, 139
+  offset: 0, 0
+  index: -1
+shadowFiend_arm_L2_2
+  rotate: true
+  xy: 317, 7
+  size: 108, 139
+  orig: 108, 139
+  offset: 0, 0
+  index: -1
+shadowFiend_arm_L2_3
+  rotate: true
+  xy: 458, 12
+  size: 106, 142
+  orig: 106, 142
+  offset: 0, 0
+  index: -1
+shadowFiend_arm_R1_1
+  rotate: true
+  xy: 729, 208
+  size: 121, 132
+  orig: 121, 132
+  offset: 0, 0
+  index: -1
+shadowFiend_arm_R1_2
+  rotate: false
+  xy: 725, 74
+  size: 124, 132
+  orig: 124, 132
+  offset: 0, 0
+  index: -1
+shadowFiend_arm_R1_3
+  rotate: true
+  xy: 729, 331
+  size: 131, 165
+  orig: 131, 165
+  offset: 0, 0
+  index: -1
+shadowFiend_arm_R2_1
+  rotate: false
+  xy: 458, 120
+  size: 138, 155
+  orig: 138, 155
+  offset: 0, 0
+  index: -1
+shadowFiend_arm_R2_2
+  rotate: false
+  xy: 316, 117
+  size: 140, 156
+  orig: 140, 156
+  offset: 0, 0
+  index: -1
+shadowFiend_arm_R2_3
+  rotate: false
+  xy: 176, 110
+  size: 138, 159
+  orig: 138, 159
+  offset: 0, 0
+  index: -1
+shadowFiend_body_1
+  rotate: false
+  xy: 236, 275
+  size: 172, 234
+  orig: 172, 234
+  offset: 0, 0
+  index: -1
+shadowFiend_body_2
+  rotate: false
+  xy: 2, 34
+  size: 172, 235
+  orig: 172, 235
+  offset: 0, 0
+  index: -1
+shadowFiend_body_3
+  rotate: false
+  xy: 410, 277
+  size: 172, 232
+  orig: 172, 232
+  offset: 0, 0
+  index: -1
+shadowFiend_cape_L
+  rotate: false
+  xy: 896, 369
+  size: 126, 140
+  orig: 126, 140
+  offset: 0, 0
+  index: -1
+shadowFiend_cape_R
+  rotate: false
+  xy: 598, 152
+  size: 124, 151
+  orig: 124, 151
+  offset: 0, 0
+  index: -1
+shadowFiend_head
+  rotate: false
+  xy: 2, 271
+  size: 232, 238
+  orig: 232, 238
+  offset: 0, 0
+  index: -1
+shadowFiend_shadow
+  rotate: false
+  xy: 584, 464
+  size: 310, 45
+  orig: 310, 45
+  offset: 0, 0
+  index: -1

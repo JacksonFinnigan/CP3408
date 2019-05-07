@@ -1,0 +1,83 @@
+
+mummy.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+mummy_arm_L
+  rotate: true
+  xy: 94, 4
+  size: 54, 78
+  orig: 54, 78
+  offset: 0, 0
+  index: -1
+mummy_arm_R
+  rotate: true
+  xy: 2, 8
+  size: 50, 90
+  orig: 50, 90
+  offset: 0, 0
+  index: -1
+mummy_body
+  rotate: true
+  xy: 174, 2
+  size: 86, 94
+  orig: 86, 94
+  offset: 0, 0
+  index: -1
+mummy_cape
+  rotate: false
+  xy: 316, 45
+  size: 56, 43
+  orig: 56, 43
+  offset: 0, 0
+  index: -1
+mummy_hair
+  rotate: false
+  xy: 397, 90
+  size: 69, 116
+  orig: 69, 116
+  offset: 0, 0
+  index: -1
+mummy_hand
+  rotate: false
+  xy: 374, 54
+  size: 37, 34
+  orig: 37, 34
+  offset: 0, 0
+  index: -1
+mummy_head
+  rotate: false
+  xy: 2, 60
+  size: 170, 193
+  orig: 170, 193
+  offset: 0, 0
+  index: -1
+mummy_leg
+  rotate: false
+  xy: 270, 32
+  size: 44, 56
+  orig: 44, 56
+  offset: 0, 0
+  index: -1
+mummy_shadow
+  rotate: false
+  xy: 174, 208
+  size: 310, 45
+  orig: 310, 45
+  offset: 0, 0
+  index: -1
+mummy_weapon_1
+  rotate: true
+  xy: 174, 90
+  size: 116, 221
+  orig: 116, 221
+  offset: 0, 0
+  index: -1
+mummy_weapon_2
+  rotate: true
+  xy: 270, 5
+  size: 25, 41
+  orig: 25, 41
+  offset: 0, 0
+  index: -1

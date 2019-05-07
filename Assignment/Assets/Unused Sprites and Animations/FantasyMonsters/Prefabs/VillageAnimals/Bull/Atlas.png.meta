@@ -1,0 +1,246 @@
+fileFormatVersion: 2
+guid: c9576725c7b16574b8b37b991efe3144
+timeCreated: 1494918541
+licenseType: Store
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Head
+    21300002: DeadHead
+    21300004: Hit
+    21300006: Body
+    21300008: UpperLeg
+    21300010: LowerLeg
+    21300012: FronLowerLeg
+    21300014: FrontLowerLeg
+    21300016: BackLowerLeg
+    21300018: BackUpperLeg
+    21300020: Atlas_10
+    21300022: FrontUpperLeg
+    21300024: Tail
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 1
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 512
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 512
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: iPhone
+    maxTextureSize: 512
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: tvOS
+    maxTextureSize: 512
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 512
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Tizen
+    maxTextureSize: 512
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: WebGL
+    maxTextureSize: 512
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Head
+      rect:
+        serializedVersion: 2
+        x: 109.75
+        y: 342.75
+        width: 136.25
+        height: 169.25
+      alignment: 9
+      pivot: {x: 0.6479116, y: 0.39793822}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: DeadHead
+      rect:
+        serializedVersion: 2
+        x: 279.75
+        y: 316.25
+        width: 136.25
+        height: 195.75
+      alignment: 9
+      pivot: {x: 0.6563638, y: 0.48235095}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Hit
+      rect:
+        serializedVersion: 2
+        x: 29.75
+        y: 183.25
+        width: 94.5
+        height: 136.75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Body
+      rect:
+        serializedVersion: 2
+        x: 167.25
+        y: 154.75
+        width: 234.5
+        height: 152
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: FrontLowerLeg
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 22
+        width: 36.75
+        height: 72
+      alignment: 9
+      pivot: {x: 0.48433265, y: 0.73191863}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BackLowerLeg
+      rect:
+        serializedVersion: 2
+        x: 291.75
+        y: 33.75
+        width: 51
+        height: 70.25
+      alignment: 9
+      pivot: {x: 0.3645181, y: 0.73769623}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BackUpperLeg
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 47.25
+        width: 56.75
+        height: 90.75
+      alignment: 9
+      pivot: {x: 0.46956202, y: 0.68400174}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: FrontUpperLeg
+      rect:
+        serializedVersion: 2
+        x: 179.75
+        y: 23.25
+        width: 65
+        height: 95.5
+      alignment: 9
+      pivot: {x: 0.45570797, y: 0.723084}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Tail
+      rect:
+        serializedVersion: 2
+        x: 448.25
+        y: 191.75
+        width: 28.5
+        height: 46.5
+      alignment: 9
+      pivot: {x: 0.52719814, y: 0.9401934}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
