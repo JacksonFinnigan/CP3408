@@ -11,10 +11,8 @@ public class PlayerController : MonoBehaviour
     /// 
     /// - Only half of jump animation is showing
     /// - animations wrong
-    /// - sprites for things
     /// - death screen (ish) for restart
     /// - lock all key inputs on level restart
-    /// - do we want variable jumping?
     /// - fix purple man from where he shoots, also flip him to face player if needed
     /// </summary>
 
@@ -83,8 +81,6 @@ public class PlayerController : MonoBehaviour
     bool facingRight = true;
     float moveHorizontal = 0f;
 
-    int jumpCount = 0;
-
     float time = 0f;
     bool keyDisabled = false;
 
@@ -105,7 +101,10 @@ public class PlayerController : MonoBehaviour
         if (!keyDisabled)
         {
             moveHorizontal = Input.GetAxis("Horizontal");
-            moveVertical = Input.GetKeyDown("space");
+            if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))
+            {
+                moveVertical = true;
+            }
         }
 
         // Only allowing player to move away from wall- NEEDS WORK
@@ -116,7 +115,7 @@ public class PlayerController : MonoBehaviour
             moveHorizontal = 0;
 
         // press shift to run when on the ground
-        if (Input.GetKey(KeyCode.LeftShift) && groundWallChecks.IsGround())
+        if (Input.GetKey(KeyCode.LeftShift) && groundWallChecks.IsGround()) //TODO When jumping in air and let go of shift, it slows down
             maxSpeed = 15f;
         else
             maxSpeed = 10f;
@@ -124,7 +123,6 @@ public class PlayerController : MonoBehaviour
         //changing animation if on the ground 
         if (groundWallChecks.IsGround())
         {
-            jumpCount = 1;
             animator.SetBool("Grounded", true);
         }
 
@@ -134,7 +132,8 @@ public class PlayerController : MonoBehaviour
 
 
 
-    
+    bool canDoubleJump = false;
+    public float jumpScale = 1f;
 
     // FixedUpdate is called at a fixed interval and is independent of frame rate. Put physics code here.
     void FixedUpdate()
@@ -142,7 +141,7 @@ public class PlayerController : MonoBehaviour
 
         //Timer to prevent spamming wall jump
         time += Time.deltaTime;
-        if (time > 0.3f && keyDisabled)
+        if (time > 0.5f && keyDisabled)
         {
             keyDisabled = false;
             time = 0;
@@ -164,26 +163,35 @@ public class PlayerController : MonoBehaviour
                 Flip();
                 keyDisabled = true;
                 animator.SetBool("Walled", false);
-                rb.velocity = new Vector2(-groundWallChecks.WallDirection() * maxSpeed * 0.5f, maxSpeed * 0.8f); //Add force opposite to the wall  
+                rb.velocity = new Vector2(-groundWallChecks.WallDirection() * maxSpeed * 0.5f, 10 * jumpScale); //Add force opposite to the wall  
             }
 
             // checks jump counter and jumps
-            if (jumpCount > 0)
+            if (groundWallChecks.IsGround())
             {
                 Jump();
+                canDoubleJump = true;
             }
-  
+            else
+            {
+                if (canDoubleJump)
+                {
+                    Jump();
+                    canDoubleJump = false;
+                }
+                
+            }
+            moveVertical = false;
         }
 
     }
 
-
+    
     void Jump()
     {
         animator.SetBool("Grounded", false);
-        ClearForces();
-        rb.velocity = new Vector2(maxSpeed * moveHorizontal, 10 * 0.8f);      
-        jumpCount--;
+        rb.velocity = new Vector2(maxSpeed * moveHorizontal, 0); //To canel out gravity force
+        rb.velocity = new Vector2(maxSpeed * moveHorizontal, 10 * jumpScale);
     }
 
 
