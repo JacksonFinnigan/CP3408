@@ -12,6 +12,7 @@ TagManager:
   - Hazard
   - Portal
   - Goal
+  - CameraChange
   layers:
   - Default
   - TransparentFX

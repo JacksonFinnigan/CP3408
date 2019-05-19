@@ -12,7 +12,6 @@ public class CameraFollow : MonoBehaviour
 
     public Vector3 offset;
 
-
     //late update runs after update so that char movement doesn't affect camera position before char moves
     void LateUpdate()
     {

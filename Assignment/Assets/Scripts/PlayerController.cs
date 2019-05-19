@@ -209,7 +209,8 @@ public class PlayerController : MonoBehaviour
 
 
 
-    public static int coinCount = 0;
+    public static int totalCoinCount = 0; // Counts total coins collected over the game
+    float tempCoinCount = 0; //counts coins collected in the level
     public Text countText;
     //public Color flashColour = new Color(1f, 0f, 0f, 0.1f);
     //public Image damageImage;
@@ -220,17 +221,27 @@ public class PlayerController : MonoBehaviour
         if (theCollision.gameObject.CompareTag("Coin"))
         {
             theCollision.gameObject.SetActive(false);
-            coinCount++;
-            countText.text = coinCount.ToString() + "/1";
+            totalCoinCount += 1;
+            tempCoinCount += 1;
+            Debug.Log("asd");
+            countText.text = tempCoinCount.ToString() + "/1";
         }
 
         if (theCollision.gameObject.CompareTag("Hazard"))
         {
             //damageImage.color = new Color(1f, 0f, 0f, 0.1f);
             //FlashScreen();
+            tempCoinCount = 0;
+                
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
-
+        if (theCollision.gameObject.CompareTag("CameraChange"))
+        {
+            
+            // change camera offset
+            //CameraFollow.offset = new Vector3(CameraFollow.offset.x * -1, CameraFollow.offset.y, CameraFollow.offset.z);
+            //Debug.Log(CameraFollow.offset);
+        }
         if (theCollision.gameObject.CompareTag("Goal"))
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         
