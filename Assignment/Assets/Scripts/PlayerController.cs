@@ -231,7 +231,7 @@ public class PlayerController : MonoBehaviour
             FindObjectOfType<AudioManager>().Play("Coin");
             totalCoinCount += 1;
             tempCoinCount += 1;
-            Debug.Log("asd");
+            Debug.Log("Coin Collected");
             countText.text = tempCoinCount.ToString() + "/1";
         }
 

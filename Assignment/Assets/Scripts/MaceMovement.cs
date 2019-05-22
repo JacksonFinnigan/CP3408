@@ -61,7 +61,7 @@ public class MaceMovement : MonoBehaviour
         if (groundWallChecks.IsGround())
         {
             moveDown = false;
-            FindObjectOfType<AudioManager>().Play("BlockHit"); 
+            
             //shakes camera if close enough
             CheckCameraDistance();
                     
@@ -101,9 +101,12 @@ public class MaceMovement : MonoBehaviour
     void CheckCameraDistance()
     {
         float Dist = Vector3.Distance(cameraMainComponent.transform.position, transform.position);
-        
-        if (Dist < distanceFromCamera) //min distance = 13, max = 30
-            camShake.Shake(3/Dist, 3/Dist); //scaling depending on how close camera is
 
+        if (Dist < distanceFromCamera) //min distance = 13, max = 30
+        {
+            camShake.Shake(3 / Dist, 3 / Dist); //scaling depending on how close camera is
+            FindObjectOfType<AudioManager>().Play("BlockHit");
+            //Debug.Log("Should be shaking");
+        }
     }
 }

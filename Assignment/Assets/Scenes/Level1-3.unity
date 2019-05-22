@@ -1969,6 +1969,11 @@ PrefabInstance:
       propertyPath: mainCam
       value: 
       objectReference: {fileID: 1514111457}
+    - target: {fileID: 1778115002595221931, guid: a45e2ad5c18a4154db1e06b3fa6040cb,
+        type: 3}
+      propertyPath: shakeAmount
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a45e2ad5c18a4154db1e06b3fa6040cb, type: 3}
 --- !u!1 &1503210858

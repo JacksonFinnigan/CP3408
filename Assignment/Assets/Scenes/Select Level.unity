@@ -336,11 +336,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 983603317, guid: 5d9a5eab8f70c55438333152e121a704, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 11.45
+      value: 8.86
       objectReference: {fileID: 0}
     - target: {fileID: 983603317, guid: 5d9a5eab8f70c55438333152e121a704, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.7
+      value: 0.42
       objectReference: {fileID: 0}
     - target: {fileID: 983603317, guid: 5d9a5eab8f70c55438333152e121a704, type: 3}
       propertyPath: m_LocalPosition.z
@@ -466,17 +466,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelSelectorRed
       objectReference: {fileID: 0}
+    - target: {fileID: 1249208015, guid: 0c1719febf9e9d04f9abde3f26acdb73, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1249208020, guid: 0c1719febf9e9d04f9abde3f26acdb73, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.96
+      value: 10.45
       objectReference: {fileID: 0}
     - target: {fileID: 1249208020, guid: 0c1719febf9e9d04f9abde3f26acdb73, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.39760923
+      value: 4.22
       objectReference: {fileID: 0}
     - target: {fileID: 1249208020, guid: 0c1719febf9e9d04f9abde3f26acdb73, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1249208020, guid: 0c1719febf9e9d04f9abde3f26acdb73, type: 3}
       propertyPath: m_LocalRotation.x
@@ -522,7 +526,7 @@ PrefabInstance:
     - target: {fileID: 4150765529642038218, guid: 3047ace085c5d034da9465423ca93c69,
         type: 3}
       propertyPath: m_Name
-      value: AudioManager (1)
+      value: AudioManager
       objectReference: {fileID: 0}
     - target: {fileID: 4150765529642038212, guid: 3047ace085c5d034da9465423ca93c69,
         type: 3}
@@ -562,7 +566,7 @@ PrefabInstance:
     - target: {fileID: 4150765529642038212, guid: 3047ace085c5d034da9465423ca93c69,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4150765529642038212, guid: 3047ace085c5d034da9465423ca93c69,
         type: 3}
@@ -581,86 +585,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3047ace085c5d034da9465423ca93c69, type: 3}
---- !u!1 &1154731427
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1154731429}
-  - component: {fileID: 1154731428}
-  m_Layer: 0
-  m_Name: AudioManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1154731428
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1154731427}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a9be6960c7293249a7057c47d8a51b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sounds:
-  - name: Coin
-    clip: {fileID: 8300000, guid: 52320e590bf774734a288886eba557ba, type: 3}
-    volume: 0.641
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: WaterDeathbox
-    clip: {fileID: 8300000, guid: fede019e27028bd4296cf7d5ee9efa41, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: DeathSplat
-    clip: {fileID: 8300000, guid: 1fcfd83e3d859db4585f34930d88477c, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: GoalReach
-    clip: {fileID: 8300000, guid: a0ca8964c08d54c5dbebf245bdc474ca, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: Jump
-    clip: {fileID: 8300000, guid: 29bde6326b4c34ad8a12da475f79b50a, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: Theme
-    clip: {fileID: 8300000, guid: cf0a92ab1d54d4fa2a81417a540f694b, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 1
-    source: {fileID: 0}
---- !u!4 &1154731429
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1154731427}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 18.8, y: 5.4, z: -24.125}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1282373599 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 115723372, guid: 05919c09e36f9e64bad46d7714ad8b78,
@@ -752,6 +676,10 @@ PrefabInstance:
     - target: {fileID: 1586195060, guid: b63ee7a584cbb8e49ad669b25fda105e, type: 3}
       propertyPath: m_Name
       value: LevelSelectorGreen
+      objectReference: {fileID: 0}
+    - target: {fileID: 1586195060, guid: b63ee7a584cbb8e49ad669b25fda105e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1586195065, guid: b63ee7a584cbb8e49ad669b25fda105e, type: 3}
       propertyPath: m_LocalPosition.x
