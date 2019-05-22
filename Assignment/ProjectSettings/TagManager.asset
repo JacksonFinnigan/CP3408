@@ -13,6 +13,7 @@ TagManager:
   - Portal
   - Goal
   - CameraChange
+  - DeathBox
   layers:
   - Default
   - TransparentFX

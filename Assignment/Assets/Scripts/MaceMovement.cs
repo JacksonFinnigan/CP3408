@@ -61,7 +61,7 @@ public class MaceMovement : MonoBehaviour
         if (groundWallChecks.IsGround())
         {
             moveDown = false;
-
+            FindObjectOfType<AudioManager>().Play("BlockHit"); 
             //shakes camera if close enough
             CheckCameraDistance();
                     

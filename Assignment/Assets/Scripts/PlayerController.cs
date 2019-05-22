@@ -12,7 +12,6 @@ public class PlayerController : MonoBehaviour
     /// - Only half of jump animation is showing
     /// - animations wrong
     /// - death screen (ish) for restart
-    /// - lock all key inputs on level restart
     /// - fix purple man from where he shoots, also flip him to face player if needed
     /// </summary>
 
@@ -77,6 +76,9 @@ public class PlayerController : MonoBehaviour
     public Animator animator;
     Rigidbody2D rb;
 
+    //AudioSource deathAudio;
+    //AudioSource waterDeathAudio;
+
     bool moveVertical = false;
     bool facingRight = true;
     float moveHorizontal = 0f;
@@ -89,6 +91,10 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         groundWallChecks = new GroundWallChecks(transform.gameObject); //check to see if touching ground or wall
+
+        /*AudioSource[] audios = GetComponents<AudioSource>();
+        deathAudio = audios[0];
+        waterDeathAudio = audios[1];*/
     }
 
 
@@ -190,6 +196,7 @@ public class PlayerController : MonoBehaviour
     void Jump()
     {
         animator.SetBool("Grounded", false);
+        FindObjectOfType<AudioManager>().Play("Jump");
         rb.velocity = new Vector2(maxSpeed * moveHorizontal, 0); //To canel out gravity force
         rb.velocity = new Vector2(maxSpeed * moveHorizontal, 10 * jumpScale);
     }
@@ -221,34 +228,50 @@ public class PlayerController : MonoBehaviour
         if (theCollision.gameObject.CompareTag("Coin"))
         {
             theCollision.gameObject.SetActive(false);
+            FindObjectOfType<AudioManager>().Play("Coin");
             totalCoinCount += 1;
             tempCoinCount += 1;
             Debug.Log("asd");
             countText.text = tempCoinCount.ToString() + "/1";
         }
 
+
+        if (theCollision.gameObject.CompareTag("DeathBox"))
+        {
+            //waterDeathAudio.Play();
+            FindObjectOfType<AudioManager>().Play("WaterDeathbox");
+            tempCoinCount = 0;
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+
+
         if (theCollision.gameObject.CompareTag("Hazard"))
         {
+
+            FindObjectOfType<AudioManager>().Play("DeathSplat");
+            //StartCoroutine(Test(deathAudio));
             //damageImage.color = new Color(1f, 0f, 0f, 0.1f);
             //FlashScreen();
             tempCoinCount = 0;
-                
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
         }
-        if (theCollision.gameObject.CompareTag("CameraChange"))
-        {
-            
-            // change camera offset
-            //CameraFollow.offset = new Vector3(CameraFollow.offset.x * -1, CameraFollow.offset.y, CameraFollow.offset.z);
-            //Debug.Log(CameraFollow.offset);
-        }
+
         if (theCollision.gameObject.CompareTag("Goal"))
+        {
+            FindObjectOfType<AudioManager>().Play("GoalReach");
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        
+        }
 
     }
 
-
+    /*IEnumerator Test(AudioSource a)
+    {
+        
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        deathAudio.Play();
+        yield return new WaitForSeconds(deathAudio.clip.length);
+    }*/
     
 
     void FlashScreen()

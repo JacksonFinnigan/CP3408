@@ -60,6 +60,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\AudioManager.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\CameraShake.cs" />
     <Compile Include="Assets\Scripts\LevelControl.cs" />
@@ -72,6 +73,8 @@
     <Compile Include="Assets\Scripts\Rotator.cs" />
     <Compile Include="Assets\Scripts\SawMovement.cs" />
     <Compile Include="Assets\Scripts\ShadowEnemy.cs" />
+    <Compile Include="Assets\Scripts\Sound.cs" />
+    <Compile Include="Assets\Unused Sprites and Animations\AudioScript.cs" />
     <Compile Include="Assets\Unused Sprites and Animations\FantasyMonsters\Scripts\MonsterAnimationManager.cs" />
     <Compile Include="Assets\Unused Sprites and Animations\FantasyMonsters\Scripts\MonsterCollection.cs" />
     <Compile Include="Assets\Unused Sprites and Animations\FantasyMonsters\Scripts\MonsterCollectionRefresh.cs" />

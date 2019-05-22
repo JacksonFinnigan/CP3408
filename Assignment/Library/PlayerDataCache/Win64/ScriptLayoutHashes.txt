@@ -171,8 +171,9 @@ d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.Spa
 003a434b07047f0cb1f3f109d041b89c Assembly-CSharp.dll:.Patrol
 d791aa6007fa3640be1164ea75bb087d Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
 7c4d61ba679beaa5d71821c8c9d31078 Assembly-CSharp.dll:.CameraFollow
+d4526bd9281306e3b0406534c9f9abf5 Assembly-CSharp.dll:.SawMovement
 c6666661329916e218bee7f5e79e60f5 Unity.TextMeshPro.dll:TMPro.TextMeshPro
 3165968ba45c74472d279ba04455fccb Unity.TextMeshPro.dll:TMPro.TMP_ColorGradient
 f450bd92c660880e07a6cb4e4f93cd6d Assembly-CSharp.dll:.LevelControl
 8649814970b42d345b89944b862453cc Unity.TextMeshPro.dll:TMPro.TMP_SubMesh
-d4526bd9281306e3b0406534c9f9abf5 Assembly-CSharp.dll:.SawMovement
+66056c2209ff8e6b238f8b056c7eb331 Assembly-CSharp.dll:.AudioManager
