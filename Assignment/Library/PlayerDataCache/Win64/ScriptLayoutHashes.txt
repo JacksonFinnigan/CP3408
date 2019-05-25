@@ -4,11 +4,16 @@ C:/Users/Froda/Desktop/Unity/Assignment/Builds/Assignment.exe
 SceneListBegin?
 Assets/Scenes/GameMenu.unity
 Assets/Scenes/Select Level.unity
+Assets/Scenes/Tutorial.unity
 Assets/Scenes/Level1-1.unity
 Assets/Scenes/Level1-2.unity
 Assets/Scenes/Level1-3.unity
 Assets/Scenes/Level1-4.unity
 Assets/Scenes/Level1-5.unity
+Assets/Scenes/Level2-1.unity
+Assets/Scenes/Level2-2.unity
+Assets/Scenes/Level2-3.unity
+Assets/Scenes/Level2-4.unity
 SceneListEnd?
 984dcc0ba3707b7691fbdca8ff508d28 Unity.TextMeshPro.dll:TMPro.TMP_SelectionCaret
 17967c3f9d212e831dae612557fb4614 Assembly-CSharp.dll:.ShadowEnemy
@@ -60,6 +65,8 @@ fc108ce7d98c40ac0907e8ca7f500c76 UnityEngine.UI.dll:UnityEngine.UI.Text
 abf1930d8126d0b2e00e9449129a0190 UnityEngine.UI.dll:UnityEngine.EventSystems.TouchInputModule
 64e54c0cbb0177c5ea26f340efb9ff85 UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
 98ad81e9f689a492509f07e75b810aaa Unity.TextMeshPro.dll:TMPro.TMP_InputField
+71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Advertisements.dll:UnityEngine.Advertisements.CallbackExecutor
+71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Advertisements.dll:UnityEngine.Advertisements.Editor.Placeholder
 cf9f5cf2c3145a37ac07f00e50e460f9 UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
 5fc094978ce3e3591a7500ed380d854a UnityEngine.UI.dll:UnityEngine.UI.Button
@@ -128,6 +135,7 @@ c4d60a397039b92b7075a979e0191c00 Assembly-CSharp.dll:Assets.FantasyMonsters.Scri
 8b21061e9d037d307e029130da878344 Assembly-CSharp.dll:.MainMenu
 b3ab2106268377ffe25dd18ac23dca28 Unity.TextMeshPro.dll:TMPro.TMP_Asset
 66056c2209ff8e6b238f8b056c7eb331 Assembly-CSharp.dll:.AudioManager
+298a66f8157eda94ec76df8a0502e191 Assembly-CSharp.dll:.DialogueManager
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.Analytics.Editor.dll:UnityEditor.Analytics.AnalyticsEventTrackerEditor
 645dd91f027f9322612246dc150391f0 Assembly-CSharp.dll:.MaceMovement
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.TextMeshPro.dll:TMPro.TMP_SpriteAnimator
@@ -169,6 +177,7 @@ a4f0a4f62100f1a4fb5cbe0e00dde83f Unity.TextMeshPro.dll:TMPro.TextMeshProUGUI
 5fc094978ce3e3591a7500ed380d854a Unity.Analytics.DataPrivacy.dll:UnityEngine.Analytics.DataPrivacyButton
 c8c5e65e9fb858572516474d6e2102bc Assembly-CSharp.dll:.PauseMenu
 d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
+afc5b93a7b192de2dcb3832fe35a5c7e Assembly-CSharp.dll:.MoleKing
 8c3f29dffad1ff606dfa08be071668af Assembly-CSharp.dll:.PlayerController
 003a434b07047f0cb1f3f109d041b89c Assembly-CSharp.dll:.Patrol
 d791aa6007fa3640be1164ea75bb087d Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
@@ -178,4 +187,3 @@ c6666661329916e218bee7f5e79e60f5 Unity.TextMeshPro.dll:TMPro.TextMeshPro
 3165968ba45c74472d279ba04455fccb Unity.TextMeshPro.dll:TMPro.TMP_ColorGradient
 f450bd92c660880e07a6cb4e4f93cd6d Assembly-CSharp.dll:.LevelControl
 8649814970b42d345b89944b862453cc Unity.TextMeshPro.dll:TMPro.TMP_SubMesh
-afc5b93a7b192de2dcb3832fe35a5c7e Assembly-CSharp.dll:.MoleKing
