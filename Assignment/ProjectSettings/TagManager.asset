@@ -51,6 +51,9 @@ TagManager:
   - name: Background
     uniqueID: 305414973
     locked: 0
+  - name: Foilage
+    uniqueID: 1111382471
+    locked: 0
   - name: Hazard
     uniqueID: 3457496203
     locked: 0
