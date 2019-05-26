@@ -208,16 +208,11 @@ public class PlayerController : MonoBehaviour
         transform.Rotate(Vector3.up * 180);
     }
 
-    private void ClearForces()
-    {
-        rb.velocity = Vector2.zero;
-        rb.angularVelocity = 0;
-    }
 
 
 
     public static int totalCoinCount = 0; // Counts total coins collected over the game
-    float tempCoinCount = 0; //counts coins collected in the level
+    int tempCoinCount = 0; //counts coins collected in the level
     public Text countText;
     //public Color flashColour = new Color(1f, 0f, 0f, 0.1f);
     //public Image damageImage;
@@ -229,9 +224,8 @@ public class PlayerController : MonoBehaviour
         {
             theCollision.gameObject.SetActive(false);
             FindObjectOfType<AudioManager>().Play("Coin");
-            totalCoinCount += 1;
             tempCoinCount += 1;
-            Debug.Log("Coin Collected");
+            Debug.Log("Coins Collected");
             countText.text = tempCoinCount.ToString() + "/1";
         }
 
@@ -259,6 +253,7 @@ public class PlayerController : MonoBehaviour
 
         if (theCollision.gameObject.CompareTag("Goal"))
         {
+            totalCoinCount += tempCoinCount;
             FindObjectOfType<AudioManager>().Play("GoalReach");
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }

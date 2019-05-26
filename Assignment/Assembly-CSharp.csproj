@@ -64,6 +64,7 @@
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\CameraShake.cs" />
     <Compile Include="Assets\Scripts\DialogueManager.cs" />
+    <Compile Include="Assets\Scripts\GameHandler.cs" />
     <Compile Include="Assets\Scripts\LevelControl.cs" />
     <Compile Include="Assets\Scripts\MaceMovement.cs" />
     <Compile Include="Assets\Scripts\MainMenu.cs" />
@@ -80,6 +81,7 @@
     <Compile Include="Assets\Unused Sprites and Animations\FantasyMonsters\Scripts\MonsterAnimationManager.cs" />
     <Compile Include="Assets\Unused Sprites and Animations\FantasyMonsters\Scripts\MonsterCollection.cs" />
     <Compile Include="Assets\Unused Sprites and Animations\FantasyMonsters\Scripts\MonsterCollectionRefresh.cs" />
+    <None Include="Assets\SaveData.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/Froda/Desktop/Unity/Assignment/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>

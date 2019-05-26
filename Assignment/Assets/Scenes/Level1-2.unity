@@ -8633,7 +8633,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1025879754, guid: 1b7838fcb4bafe344a2cbdbd7ffc793b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.775732
+      value: 8.82
       objectReference: {fileID: 0}
     - target: {fileID: 1025879754, guid: 1b7838fcb4bafe344a2cbdbd7ffc793b, type: 3}
       propertyPath: m_LocalRotation.y
@@ -8645,7 +8645,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1025879754, guid: 1b7838fcb4bafe344a2cbdbd7ffc793b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.5318247
+      value: 0.53
       objectReference: {fileID: 0}
     - target: {fileID: 1025879754, guid: 1b7838fcb4bafe344a2cbdbd7ffc793b, type: 3}
       propertyPath: m_RootOrder
@@ -13937,6 +13937,10 @@ PrefabInstance:
       propertyPath: countText
       value: 
       objectReference: {fileID: 50445133}
+    - target: {fileID: 1137051840, guid: 05919c09e36f9e64bad46d7714ad8b78, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6689427835404967385, guid: 05919c09e36f9e64bad46d7714ad8b78,
         type: 3}
       propertyPath: m_Enabled
@@ -13951,10 +13955,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_PlayOnAwake
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1137051840, guid: 05919c09e36f9e64bad46d7714ad8b78, type: 3}
-      propertyPath: m_Material
-      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6689427835404967385, guid: 05919c09e36f9e64bad46d7714ad8b78, type: 3}
