@@ -8,6 +8,7 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     public AudioMixer audioMixer;
+    public Text statText; 
 
     public Dropdown resolutionDropdown;
     Resolution[] resolutions;
@@ -36,12 +37,16 @@ public class MainMenu : MonoBehaviour
         resolutionDropdown.RefreshShownValue();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Update()
     {
-        
-    }
+        if (SceneManager.GetActiveScene().name == "GameEnd"){
 
+            int deathCount = PlayerController.totalDeathCount;
+            int coinCount = PlayerController.totalCoinCount;
+
+            statText.text = "You beat the game while picking up " + coinCount + " coins and only dying " + deathCount + " times!";
+        }
+    }
     public void PlayGame()
     {
         SceneManager.LoadScene("Select Level");
@@ -74,4 +79,5 @@ public class MainMenu : MonoBehaviour
         Resolution resolution = resolutions[resolutionIndex];
         Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
     }
+
 }

@@ -28,27 +28,30 @@ public class GameHandler : MonoBehaviour
 
     public static int levelIndex;
     int totalCoins;
+    int deathCount;
 
     private void Save()
     {
         totalCoins = PlayerController.totalCoinCount;
         levelIndex = SceneManager.GetActiveScene().buildIndex;
+        deathCount = PlayerController.totalDeathCount;
 
-        Debug.Log("Saved: Index is: " + levelIndex + ", Coins is: " + totalCoins);
+        Debug.Log("Saved: Index is: " + levelIndex + ", Coins is: " + totalCoins + ", Deaths are: "  + deathCount);
 
-        string[] lines = { levelIndex.ToString(), totalCoins.ToString() };
-        File.WriteAllLines("Assets/SaveData.txt", lines);
+        string[] lines = { levelIndex.ToString(), totalCoins.ToString(), deathCount.ToString() };
+        File.WriteAllLines("Builds/SaveData.txt", lines);
 
     }
 
     private void Load()
     {
-        string[] lines = File.ReadAllLines("Assets/SaveData.txt");
+        string[] lines = File.ReadAllLines("Builds/SaveData.txt");
         Debug.Log(lines[0] + ":  " + lines[1]);
         levelIndex = int.Parse(lines[0]);
-        totalCoins = int.Parse(lines[1]);
+        PlayerController.totalCoinCount = int.Parse(lines[1]);
+        PlayerController.totalDeathCount = int.Parse(lines[2]);
 
-        PlayerController.totalCoinCount = totalCoins;
+
         SceneManager.LoadScene(levelIndex);
     }
 }

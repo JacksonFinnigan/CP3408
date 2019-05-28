@@ -15,10 +15,11 @@ public class DialogueManager : MonoBehaviour
 
         miniMap = GameObject.Find("HUDCanvas_MiniMap/MiniMap");
         
+        //Adding tutorial Text to the Game
         diagText.Add("To jump press W/Up");
         diagText.Add("To double jump press W/Up again when in the air");
         diagText.Add("To run, press and hold shift");
-        diagText.Add("You can also jump up walls!");
+        diagText.Add("You can also scale up walls!");
         diagText.Add("Collect coins for a high Score");
         diagText.Add("Watch out for sharp or hungry things!");
         diagText.Add("Check out the minimap to help you");
@@ -36,14 +37,6 @@ public class DialogueManager : MonoBehaviour
             dialogueText.text = diagText[tutorialCounter];
             GetComponent<BoxCollider2D>().enabled = false;
             tutorialCounter++;
-
-            /*if (tutorialCounter < 1) {
-                miniMap.SetActive(false);
-            }
-            else
-            {
-                miniMap.SetActive(true);
-            }*/
         }
     }
 }

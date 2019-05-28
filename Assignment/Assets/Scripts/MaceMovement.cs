@@ -64,8 +64,6 @@ public class MaceMovement : MonoBehaviour
             
             //shakes camera if close enough
             CheckCameraDistance();
-                    
-
         }
         if (checkPosition())
             moveDown = true;
@@ -104,9 +102,8 @@ public class MaceMovement : MonoBehaviour
 
         if (Dist < distanceFromCamera) //min distance = 13, max = 30
         {
-            camShake.Shake(3 / Dist, 3 / Dist); //scaling depending on how close camera is
+            camShake.Shake(3 / Dist /2 , 3 / Dist); //scaling depending on how close camera is
             FindObjectOfType<AudioManager>().Play("BlockHit");
-            //Debug.Log("Should be shaking");
         }
     }
 }

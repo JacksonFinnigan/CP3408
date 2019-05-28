@@ -6,17 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
-    /// <summary>
-    /// PROBLEMS!
-    /// 
-    /// - Only half of jump animation is showing
-    /// - animations wrong
-    /// - death screen (ish) for restart
-    /// - fix purple man from where he shoots, also flip him to face player if needed
-    /// </summary>
-
-
-       
     
     public class GroundWallChecks
     {
@@ -76,9 +65,6 @@ public class PlayerController : MonoBehaviour
     public Animator animator;
     Rigidbody2D rb;
 
-    //AudioSource deathAudio;
-    //AudioSource waterDeathAudio;
-
     bool moveVertical = false;
     bool facingRight = true;
     float moveHorizontal = 0f;
@@ -91,10 +77,6 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         groundWallChecks = new GroundWallChecks(transform.gameObject); //check to see if touching ground or wall
-
-        /*AudioSource[] audios = GetComponents<AudioSource>();
-        deathAudio = audios[0];
-        waterDeathAudio = audios[1];*/
     }
 
 
@@ -210,12 +192,11 @@ public class PlayerController : MonoBehaviour
 
 
 
-
+    public static int totalDeathCount = 0;
     public static int totalCoinCount = 0; // Counts total coins collected over the game
     int tempCoinCount = 0; //counts coins collected in the level
     public Text countText;
-    //public Color flashColour = new Color(1f, 0f, 0f, 0.1f);
-    //public Image damageImage;
+
 
     //coins are triggers to prevent them affecting movement
     void OnTriggerEnter2D(Collider2D theCollision)
@@ -235,7 +216,12 @@ public class PlayerController : MonoBehaviour
             //waterDeathAudio.Play();
             FindObjectOfType<AudioManager>().Play("WaterDeathbox");
             tempCoinCount = 0;
+            totalDeathCount ++;
+
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
+            //just in case we are in the tutorial
+            DialogueManager.tutorialCounter = 0;
         }
 
 
@@ -243,12 +229,12 @@ public class PlayerController : MonoBehaviour
         {
 
             FindObjectOfType<AudioManager>().Play("DeathSplat");
-            //StartCoroutine(Test(deathAudio));
-            //damageImage.color = new Color(1f, 0f, 0f, 0.1f);
-            //FlashScreen();
             tempCoinCount = 0;
+            totalDeathCount ++;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 
+            //just in case we are in the tutorial
+            DialogueManager.tutorialCounter = 0;
         }
 
         if (theCollision.gameObject.CompareTag("Goal"))
@@ -258,20 +244,6 @@ public class PlayerController : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
 
-    }
-
-    /*IEnumerator Test(AudioSource a)
-    {
-        
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        deathAudio.Play();
-        yield return new WaitForSeconds(deathAudio.clip.length);
-    }*/
-    
-
-    void FlashScreen()
-    {
-        //damageImage.color = Color.Lerp(damageImage.color, Color.clear, 0.1f * Time.deltaTime);
     }
 
 
