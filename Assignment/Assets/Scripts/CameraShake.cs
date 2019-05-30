@@ -9,23 +9,17 @@ public class CameraShake : MonoBehaviour
 
     private void Awake()
     {
+        // set camera to shake
         if (mainCam == null)
             mainCam = Camera.main;
     }
 
+   
     public void Shake(float amt, float length)
     {
         shakeAmount = amt;
         InvokeRepeating("BeginShake", 0, 0.01f);
         Invoke("StopShake", length);
-    }
-
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.T))
-        {
-            Shake(shakeAmount, 0.2f);
-        }    
     }
 
     private void BeginShake()

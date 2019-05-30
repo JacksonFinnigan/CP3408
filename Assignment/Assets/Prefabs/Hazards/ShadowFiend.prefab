@@ -329,6 +329,7 @@ GameObject:
   - component: {fileID: 4756719960795755774}
   - component: {fileID: 4737454635909515720}
   - component: {fileID: 4851152609318335413}
+  - component: {fileID: 398306669046049003}
   m_Layer: 0
   m_Name: ShadowFiend
   m_TagString: Hazard
@@ -401,6 +402,22 @@ MonoBehaviour:
     type: 3}
   player: {fileID: 0}
   animator: {fileID: 4756719960795755774}
+--- !u!58 &398306669046049003
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4850741944677789308}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 25, y: 150}
+  serializedVersion: 2
+  m_Radius: 160
 --- !u!1 &4850741944894875426
 GameObject:
   m_ObjectHideFlags: 0
